@@ -1,13 +1,4 @@
-use {
-    smash::{
-        lua2cpp::*,
-        phx::*,
-        app::{sv_animcmd::*, lua_bind::*, *},
-        lib::lua_const::*
-    },
-    smashline::*,
-    smash_script::*
-};
+use super::*;
 
 unsafe extern "C" fn mario_throwb(fighter: &mut L2CAgentBase) {
     if macros::is_excute(fighter) {

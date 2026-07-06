@@ -1,3 +1,16 @@
+#[allow(unused_imports)]
+use {
+    smash::{
+        lua2cpp::*,
+        hash40,
+        phx::*,
+        app::{lua_bind::*, sv_animcmd::*, *},
+        lib::{lua_const::*, L2CValue}
+    },
+    smashline::*,
+    smash_script::*
+};
+
 // mario
 mod acmd;
 mod status;

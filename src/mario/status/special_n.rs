@@ -1,7 +1,4 @@
-use smash::{
-    lua2cpp::*,
-    lib::{lua_const::*, L2CValue}
-};
+use super::*;
 
 unsafe extern "C" fn mario_special_n_main(fighter: &mut L2CFighterCommon) -> L2CValue {
     // calls the original status

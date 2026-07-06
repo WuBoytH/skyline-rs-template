@@ -1,6 +1,14 @@
-use smash::{
-    lua2cpp::*,
-    app::{lua_bind::*, *}
+#[allow(unused_imports)]
+use {
+    smash::{
+        lua2cpp::*,
+        hash40,
+        phx::*,
+        app::{lua_bind::*, sv_animcmd::*, *},
+        lib::{lua_const::*, L2CValue}
+    },
+    smashline::*,
+    smash_script::*
 };
 
 pub unsafe extern "C" fn global_fighter_frame(fighter : &mut L2CFighterCommon) {
